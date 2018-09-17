@@ -24,6 +24,7 @@ Contains the R code necessary for converting Orbitrap mass-spec files into a coh
 ### 2. Run 02_LOBSTAHS.R
   - Inputs: .mzxml files from above
   - Outputs: LOBSTAHS peaklist .csv file
+  - Notes: Must be run twice, once for each polarity mode
 
 ### 3. Run 03_Station_Collation.R
   - Inputs: Data summary file (.xlsx) and nutrient data file (.xlsx) (see above)
