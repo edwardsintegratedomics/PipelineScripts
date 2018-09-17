@@ -20,9 +20,9 @@ register(bpstart(MulticoreParam(1)))
 working_dir <- "/media/windows/Users/willi/Documents/Berkeley/Elab/SURFIN"
 setwd(working_dir)
 
-data_source <- "/media/wkumler/TheVault/6a_TLE_ESI" #Specify working directory for Ubuntu
+data_source <- "/media/wkumler/TheVault/6a_TLE_ESI" #Specify where the mzXML files are stored
 
-mzXMLdirs <- c("/mzXML_pos", "/mzXML_neg")
+mzXMLdirs <- c("/mzXML_pos", "/mzXML_neg") # Specify the names of the sub-folders where the two polarities were extracted
 
 # specify which of the directories above you wish to analyze this time through
 chosenFileSubset = paste0(data_source, "/mzXML_pos/")
