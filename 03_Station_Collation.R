@@ -1,4 +1,4 @@
-#StationCollation
+# 03_Station_Collation.R
 
 #Accepts the two metadata excel files, one describing nutrients and the other
 #providing the link between Orbitrap sample numbers and CTD/depth
