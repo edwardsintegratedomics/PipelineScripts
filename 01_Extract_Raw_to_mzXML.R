@@ -1,12 +1,12 @@
-#raw2mzxml.R
+#01_Extract_Raw_to_mzXML.R.R
 
 #Remember, must be run in Windows
 #Set working directory to where the files are
 setwd("D:/6a_TLE_ESI")
 
-#Assumes Raw files are in a folder named "Raw" within 6a_TLE_ESI
+#Assumes Raw files are in a folder named "Raw" within WD
 
-#Creates 3 new folders within 6a_TLE_ESI:
+#Creates 3 new folders within WD:
 #  mzXML_ms1_two_mode/ (initial convert raw to mzXML)
 #  mzXML_pos/          (extracted positive mode data)
 #  mzXML_neg/          (extracted negative mode data)
