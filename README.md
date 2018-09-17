@@ -15,20 +15,20 @@ Contains the R code necessary for converting Orbitrap mass-spec files into a coh
 
 ## Workflow:
 
-1. Run raw2mzxml.R.
+### 1. Run raw2mzxml.R.
   - Inputs: .raw data files
   - Outputs: .mzxml data files, extracted into positive, and negative mode.
   - Notes: Must be run on a machine with msconvert command-line utility installed
     - Means it must be a Windows machine
 
-2. Run prep_TLE_Pos.R and prep_TLE_Neg.R
+### 2. Run prep_TLE_Pos.R and prep_TLE_Neg.R
   - Inputs: .mzxml files from above
   - Outputs: LOBSTAHS peaklist .csv file
 
-3. Run StationCollation.R
+### 3. Run StationCollation.R
   - Inputs: Data summary file (.xlsx) and nutrient data file (.xlsx) (see above)
   - Outputs: Clean_Stations.csv file, a combination of the two above.
 
-4. Run DataCleaning.R
+### 4. Run DataCleaning.R
  - Inputs: Clean_Stations.csv file, both negative and positive LOBSTAHS peaklists (.csv)
  - Outputs: .csv file in long format, a collation of all the data gathered.
