@@ -2,7 +2,7 @@
 
 #Remember, must be run in Windows
 #Set working directory to where the files are
-setwd("D:/6a_TLE_ESI")
+setwd("DemoData/")
 
 #Assumes Raw files are in a folder named "Raw" within WD
 
@@ -14,13 +14,14 @@ setwd("D:/6a_TLE_ESI")
 #Get a list of all the raw file names
 rawFiles <- list.files("Raw")
 baseNames <- gsub(pattern = ".raw", replacement = "", rawFiles)
-filesToConvert <- rawFiles[!file.exists(paste0("mzXML_ms1_two_mode/", baseNames, ".mzxml"))]
+filesToConvert <- rawFiles[!file.exists(paste0("mzXML_two_mode/", baseNames, ".mzxml"))]
 filesToConvert <- paste0("Raw/", filesToConvert)
 
 #Extract each of them
 for(i in filesToConvert) {
-  system(paste("msconvert", i, "--mzXML --filter \"peakPicking true 1-\" -o mzXML_ms1_two_mode -v"))
+  system(paste("msconvert", i, "--mzXML --filter \"peakPicking true 1-\" -o mzXML_two_mode -v"))
 }
+
 #Runs the shell command "msconvert FILENAME --mzXML --filter 'peakPicking true 1-' -o mzXML_ms1_two_mode -v"
 
 filesToExtract <- paste0("mzXML_ms1_two_mode/", baseNames, ".mzXML")
