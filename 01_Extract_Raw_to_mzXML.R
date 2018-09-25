@@ -1,4 +1,4 @@
-#01_Extract_Raw_to_mzXML.R.R
+#01_Extract_Raw_to_mzXML.R
 
 #Remember, must be run in Windows
 #Set working directory to where the files are
