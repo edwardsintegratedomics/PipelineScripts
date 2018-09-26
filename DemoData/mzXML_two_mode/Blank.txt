@@ -1,0 +1,2 @@
+There would be two-mode data here, but they're too large to host on GitHub and annoying to work with anyway.
+More of a transition step between .raw and separate modes.
