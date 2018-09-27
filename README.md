@@ -4,7 +4,7 @@ Contains the R code necessary for converting Orbitrap mass-spec files into a coh
 
 
 ## Inputs:
-- .RAW data files from an Orbitrap. In this case, can be downloaded [here](ftp://ftp.whoi.edu/pub/science/MCG/gbmf/VanMooy/OxylipinAnalysis/expt%206%20&%207/)
+- .RAW data files from an Orbitrap. In this case, can be downloaded here: ftp://ftp.whoi.edu/pub/science/MCG/gbmf/VanMooy/OxylipinAnalysis/expt%206%20&%207/
 
 - Data summary file [here](https://www2.whoi.edu/staff/bvanmooy/gordon-and-betty-moore-foundation-project-data/)
 
