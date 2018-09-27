@@ -2,7 +2,7 @@
 
 #Remember, must be run in Windows
 #Set working directory to where the files are
-setwd("DemoData/")
+setwd("D:/DemoData/")
 
 #Assumes Raw files are in a folder named "Raw" within WD
 
