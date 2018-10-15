@@ -31,6 +31,7 @@ nutrients$Date_prop <- as.numeric(nutrients$`Date Local`)-41451
 #https://www2.whoi.edu/staff/bvanmooy/gordon-and-betty-moore-foundation-project-data/
 url <- "http://www.whoi.edu/fileserver.do?id=205544&pt=2&p=192529"
 download.file(url, destfile = paste0(getwd(), "/GBMF_Data_Exp2_BRE.xlsx"))
+
 #Extract only the TLE-ESI data for the water column (6a)
 OrbiNums <- read.xlsx("GBMF_Data_Exp2_BRE.xlsx", sheetIndex = 1, header=F,
                   startRow = 9, endRow = 72, stringsAsFactors = F)[3:4]
@@ -38,7 +39,7 @@ names(OrbiNums) <- c("Orbi Number", "Gross") #Rename them
 ctdnum <- gsub(pattern = "sfc", "0m", OrbiNums$Gross) #Replace "sfc" with 0m
 ctdnum <- gsub(pattern = "PS1312 CTD", "", ctdnum) #Throw out useless bit in front
 ctdnum <- do.call(rbind, strsplit(ctdnum, "-")) #Extract depth and CTD separately
-CTDs <- as.numeric(ctdnum[,1]) 
+CTDs <- as.numeric(ctdnum[,1])
 depths <- as.numeric(gsub("m", "", ctdnum[,2]))
 OrbiNums <- cbind(OrbiNums, CTDs, depths)
 

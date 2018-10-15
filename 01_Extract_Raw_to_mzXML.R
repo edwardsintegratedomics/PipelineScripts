@@ -2,7 +2,7 @@
 
 #Remember, must be run in Windows
 #Set working directory to where the files are
-setwd("D:/DemoData/")
+setwd("C:/Users/willi/Documents")
 
 #Assumes Raw files are in a folder named "Raw" within WD
 
@@ -24,7 +24,7 @@ for(i in filesToConvert) {
 
 #Runs the shell command "msconvert FILENAME --mzXML --filter 'peakPicking true 1-' -o mzXML_ms1_two_mode -v"
 
-filesToExtract <- paste0("mzXML_ms1_two_mode/", baseNames, ".mzXML")
+filesToExtract <- paste0("mzXML_two_mode/", baseNames, ".mzXML")
 #Extract them into positive and negative ion mode
 for(i in 1:length(filesToExtract)) {
   system(paste0("msconvert ", filesToExtract[i], " --mzXML --filter \"polarity positive\" -o mzXML_pos -v"))
