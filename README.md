@@ -22,7 +22,7 @@ Contains the R code necessary for converting Orbitrap mass-spec files into a coh
     - Means it must be a Windows machine
 
 ### 2. Run 02_LOBSTAHS.R
-  - Inputs: .mzxml files from above
+  - Inputs: .mzxml files from above, custom database (optional, see below note)
   - Outputs: LOBSTAHS peaklist .csv file
   - Notes: Must be run twice, once for each polarity mode
 
@@ -33,3 +33,7 @@ Contains the R code necessary for converting Orbitrap mass-spec files into a coh
 ### 4. Run 04_Data_Cleaning.R
  - Inputs: Clean_Stations.csv file, both negative and positive LOBSTAHS peaklists (.csv)
  - Outputs: .csv file in long format, a collation of all the data gathered.
+
+## Custom database:
+
+By default, step 2 uses the database that comes with the LOBSTAHS package. However, this database is customizable - compounds can be added or removed. There's a detailed process for this in the LOBSTAHS documentation, but Will wrote a wrapper for most of the functions and ported it out as a Shiny Application hosted on his personal Shiny website. Check it out [here](TBD HELP)
