@@ -36,4 +36,4 @@ Contains the R code necessary for converting Orbitrap mass-spec files into a coh
 
 ## Custom database:
 
-By default, step 2 uses the database that comes with the LOBSTAHS package. However, this database is customizable - compounds can be added or removed. There's a detailed process for this in the LOBSTAHS documentation, but Will wrote a wrapper for most of the functions and ported it out as a Shiny Application hosted on his personal Shiny website. Check it out [here](TBD HELP)
+By default, step 2 uses the database that comes with the LOBSTAHS package. However, this database is customizable - compounds can be added or removed. There's a detailed process for this in the LOBSTAHS documentation, but Will wrote a wrapper for most of the functions and ported it out as a Shiny Application hosted on his personal Shiny website. Check it out [here](https://dubukay.shinyapps.io/DatabaseConstructor/). You can upload a previously created database as a .csv file and append compounds to it, or start from scratch and build a database from the ground up by specifying chemical formulas and iterations for them. Send Will an email if you're curious about how to use it.
